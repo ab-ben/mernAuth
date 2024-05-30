@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDOJv1IJ6dWTnXme6ezyCUSJA_hWzsKib0",
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
     authDomain: "mern-auth-20c44.firebaseapp.com",
     projectId: "mern-auth-20c44",
     storageBucket: "mern-auth-20c44.appspot.com",
